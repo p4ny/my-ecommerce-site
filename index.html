@@ -1600,9 +1600,9 @@
             <h3 class="text-white">Subscribe</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, odio beatae accusantium.
             </p>
-            <form action="#">
+            <form id="subscribe-form">
               <div class="d-flex mb-5">
-                <input type="text" class="form-control rounded-0" placeholder="Email">
+                <input id="subscribe-email" type="email" class="form-control rounded-0" placeholder="Email">
                 <input type="submit" class="btn btn-primary rounded-0" value="Subscribe">
               </div>
             </form>
@@ -1752,8 +1752,13 @@
 
       loadDoc("./xml/class_sunday.xml", classXML);
       loadDoc("./json/class_sunday.json", classJSON);
+      //loadSubject('json://contact_subject.json');
       //loadSubject('http://localhost:4040/');
       loadSubject('http://localhost:4000/api/subject');
+
+      document.getElementById('subscribe-form')
+              .addEventListener('submit', e => subscribeSubmit(e));
+    
     };
 
     // AJAX function
@@ -1789,6 +1794,18 @@
       
     }
 
+    async function subscribeSubmit(e) {
+      e.preventDefault();
+      console.log('Hi');
+      const email = { email : document.getElementById('subscribe-email').value};
+      console.log(email);
+      const response = await fetch('http://localhost:4000/api/subscribe', {
+        method : 'POST',
+        headers : { 'Content-Type' : 'application/json'},
+        body : JSON.stringify(email)
+      });
+      console.log(response);
+    }
   </script>
 </body>
 
