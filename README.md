@@ -39,7 +39,7 @@ Full-featured e-commerce website with user registration, login, and contact form
 
 3. Access the website at:
    ```
-   http://localhost:3000
+   http://localhost:
    ```
 
 ## API Endpoints

@@ -497,7 +497,6 @@
               aria-labelledby="nav-sunday-tab"
             >
               <div id="classes-container" class="row">
-                <!-- Classes will be loaded dynamically from the API -->
               </div>
             </div>
             <div
@@ -1520,6 +1519,7 @@
           <div class="row justify-content-center">
             <div class="col-md-7">
               <div>
+
                 <!-- Nav tabs -->
                 <ul id="nav login" class="nav nav-tabs" role="tablist">
                   <li role="presentation" class="active">
@@ -1597,7 +1597,7 @@
                             class="form-control"
                             required
                           >
-                            <option value="">Select Subject</option>
+                            <option value="">Subject</option>
                           </select>
                         </div>
                       </div>
@@ -1649,6 +1649,33 @@
                           />
                         </div>
                       </div>
+
+                      <div class="form-group row">
+                        <div class="col-md-12">
+                          <select
+                            id="occupation-category"
+                            class="form-control"
+                            required
+                          >
+                            <option value="">Occupation Category</option>
+                      
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <div class="col-md-12">
+                          <select
+                            id="occupation"
+                            class="form-control"
+                            required
+                            disabled
+                          >
+                            <option value="">Occupation</option>
+                          </select>
+                        </div>
+                        </div> 
+                    
+
                       <div class="form-group row">
                         <div class="col-md-12">
                           <input
@@ -1671,31 +1698,7 @@
                           />
                         </div>
                       </div>
-                      <div class="form-group row">
-                        <div class="col-md-12">
-                          <select
-                            id="occupation-category"
-                            class="form-control"
-                            required
-                          >
-                            <option value="">Select Occupation Category</option>
-                            <!-- Options will be loaded from JSON -->
-                          </select>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="col-md-12">
-                          <select
-                            id="occupation"
-                            class="form-control"
-                            required
-                            disabled
-                          >
-                            <option value="">Select Occupation</option>
-                            <!-- Options will be loaded based on category -->
-                          </select>
-                        </div>
-                      </div>
+                      
                       <div class="form-group row">
                         <div class="col-md-6">
                           <button
