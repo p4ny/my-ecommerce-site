@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "firstName": "admin",
+    "lastName": "admin",
+    "email": "admin@admin.com",
+    "password": "bb12345677",
+    "category": "computer",
+    "occupation": "Software Developer",
+    "registeredAt": "2025-05-18T13:10:40.573Z"
+  }
+]

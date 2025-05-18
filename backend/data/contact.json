@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "fname": "admin",
+    "lname": "admin",
+    "email": "admin@admin.com",
+    "subject": "Class",
+    "message": "test",
+    "submittedAt": "2025-05-18T13:21:01.855Z"
+  }
+]
