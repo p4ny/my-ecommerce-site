@@ -1491,6 +1491,8 @@
                       </div>
                     </div>
 
+                  
+
                     <div class="form-group row">
                       <div class="col-md-12">
                         <textarea id="message" name="message" class="form-control" id="" cols="30" rows="10"
@@ -1509,6 +1511,7 @@
           
                   </form>
                 </div>
+
                 <!-- register -->
                 <div role="tabpanel" class="tab-pane" id="register">
                   <form method="post" data-aos="fade">
@@ -1522,17 +1525,37 @@
                   </div>
         
                   <div class="form-group row">
-                    <div class="col-md-12">
-                      <input type="text" class="form-control" placeholder="Occupation">
+                      <div class="col-md-12">
+                        <!--<input type="text" class="form-control" placeholder="Subject">-->
+                        <select id="occupation-category" name="occupation-category" class="form-control" onchange="show()">
+                          <option value="">Occupation Category</option>
+                        </select>                  
+                      </div>
                     </div>
-                  </div>
+
+                  <div class="form-group row">
+                      <div class="col-md-12">
+                        <!--<input type="text" class="form-control" placeholder="Subject">-->
+                        <select id="occupation" name="occupation" class="form-control" onchange="show()">
+                          <option value="">Occupation</option>
+                        </select>                  
+                      </div>
+                    </div>
+                  
         
                   <div class="form-group row">
                     <div class="col-md-12">
                       <input type="email" class="form-control" placeholder="Email">
                     </div>
                   </div>
-                  
+
+                  <div class="form-group row">
+                    <div class="col-md-12">
+                      <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                  </div>
+
+                
         
                   <div class="form-group row">
                     <div class="col-md-6">
@@ -1806,6 +1829,7 @@
       });
       console.log(response);
     }
+
   </script>
 </body>
 
