@@ -1,11 +1,11 @@
 {
   "contactSubject": [
-    "General Enquiry",
-    "Class",
-    "Schedule",
-    "Instructor",
-    "Price",
-    "Location" ,
+    "General Inquiry",
+    "Membership",
+    "Classes",
+    "Training",
+    "Feedback",
+    "Technical Support",
     "Other"
   ]
 }
