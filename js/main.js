@@ -314,7 +314,6 @@ jQuery(document).ready(function ($) {
         contentType: "application/json",
         data: JSON.stringify({ email }),
         success: function (response) {
-          alert("Thank you for subscribing!");
           $('input[type="text"]').val("");
         },
         error: function (error) {
@@ -343,7 +342,6 @@ jQuery(document).ready(function ($) {
         contentType: "application/json",
         data: JSON.stringify(formData),
         success: function (response) {
-          alert("Your message has been sent. Thank you!");
           $("#contactForm")[0].reset();
         },
         error: function (error) {
@@ -399,7 +397,7 @@ jQuery(document).ready(function ($) {
             const subjectSelect = $("#subject");
             subjectSelect.empty();
 
-            subjectSelect.append('<option value="">Select Subject</option>');
+            subjectSelect.append('<option value="">Subject</option>');
 
             data.contactSubject.forEach(function (subject) {
               subjectSelect.append(
@@ -439,7 +437,7 @@ jQuery(document).ready(function ($) {
                 const occupationSelect = $("#occupation");
                 occupationSelect.empty();
                 occupationSelect.append(
-                  '<option value="">Select Occupation</option>'
+                  '<option value="">Occupation</option>'
                 );
                 occupationSelect.prop("disabled", true);
               }
@@ -460,7 +458,7 @@ jQuery(document).ready(function ($) {
           const occupationSelect = $("#occupation");
           occupationSelect.empty();
           occupationSelect.append(
-            '<option value="">Select Occupation</option>'
+            '<option value="">Occupation</option>'
           );
 
           if (data && data.length > 0) {

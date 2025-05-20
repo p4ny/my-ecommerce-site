@@ -1,0 +1,5 @@
+รันใน backend
+node apiServer.js
+
+รันนอก backend
+node expServer.js
